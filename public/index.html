@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+      html,
+      body {
+        background-image: url("../images/bg-intro-desktop.png");
+        background-color: hsl(0, 100%, 74%);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container w-1024 m-auto sm:p-20">
+      <div class="row grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div
+          class="col text-white p-7 flex flex-col self-center text-center lg:text-left"
+        >
+          <h1 class="xl:text-5xl md:text-4xl text-2xl font-bold">
+            Learn to code by watching others
+          </h1>
+          <p class="lg:pt-8 pt-3 xl:text-base text-xs leading-5 tracking-wider">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+
+        <div class="col px-7 vsm:p-7">
+          <div
+            class="flex justify-center content-center text-header text-white bg-blue-700 p-5 mb-3 rounded-lg"
+          >
+            <p
+              class="text-gray-300 text-center lg:text-left text-xs xl:text-base"
+            >
+              <strong class="text-white">Try it free 7 days</strong> then
+              $20/mo. thereafter
+            </p>
+          </div>
+
+          <form
+            method="POST"
+            action=""
+            id="form"
+            class="flex-col p-5 flex justify-center content-center bg-white rounded-lg shadow-black"
+          >
+            <div class="form-control">
+              <input
+                class="p-3.5 mx-auto my-2.5 w-full border rounded placeholder:text-sm placeholder:md:text-base"
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name"
+              />
+              <div class="error text-xs text-red-400 text-end"></div>
+            </div>
+            <div class="form-control">
+              <input
+                class="p-3.5 mx-auto my-2.5 w-full border rounded placeholder:text-sm placeholder:md:text-base"
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+              />
+              <div class="error text-xs text-red-400 text-end"></div>
+            </div>
+            <div class="form-control">
+              <input
+                class="p-3.5 mx-auto my-2.5 w-full border rounded placeholder:text-sm placeholder:md:text-base"
+                type="email"
+                name="emailAddress"
+                id="emailAddress"
+                placeholder="Email Address"
+              />
+              <div class="error text-xs text-red-400 text-end"></div>
+            </div>
+            <div class="form-control">
+              <input
+                class="p-3.5 mx-auto my-2.5 w-full border rounded placeholder:text-sm placeholder:md:text-base"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <div class="error text-xs text-red-400 text-end"></div>
+            </div>
+            <button
+              type="submit"
+              class="bg-green-400 text-white p-3 my-2 rounded md:text-base text-sm"
+            >
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p class="text-gray-400 m-3 text-xs text-center">
+              By clicking the button. you are agreeing to our
+              <strong class="text-black">Terms and Services</strong>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
